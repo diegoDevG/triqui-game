@@ -1,6 +1,8 @@
 import React from 'react'
-import Board from './Board';
+// import BoardHooks from './Board';
 import styled from 'styled-components';
+// import BoardHooks from './BoardHooks';
+import BoardReducer from './BoardReducer';
 
 const BoardSpace = styled.div`
     font-family: 'Gochi Hand', cursive;
@@ -12,13 +14,13 @@ const BoardSpace = styled.div`
 `;
 
 
-function Game (){
-    return(
+const Game = () => {
+    return (
         <BoardSpace>
-            <Board />
+            <BoardReducer />
         </BoardSpace>
     )
-  }
+}
 
- 
-  export default (Game);
+
+export default (Game);

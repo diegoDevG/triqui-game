@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './components/Game';
 import * as serviceWorker from './serviceWorker';
+import HelloWordHooks from './components/HelloWordHook';
+import Game from './components/Game';
+
 
 ReactDOM.render(<Game />, document.getElementById('root'));
 
